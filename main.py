@@ -1,6 +1,7 @@
 # Vítejte v programu: Lehka kalkulacka
 import math
 
+
 # Tady definujeme scitani
 def add(x, y):
     return x + y
@@ -20,9 +21,11 @@ def multiply(x, y):
 def divide(x, y):
     return x / y
 
-#Tady definujeme fuknci faktorial
+
+# Tady definujeme fuknci faktorial
 def factorial(x):
     return math.factorial(x)
+
 
 print("Vyber si operaci:")
 print("1.Scitani")
@@ -38,7 +41,6 @@ while True:
     if choice in ('1', '2', '3', '4'):
         num1 = float(input("Vloz prvni cislo: "))
         num2 = float(input("Vloz druhe cislo: "))
-
 
         if choice == '1':
             print(num1, "+", num2, "=", add(num1, num2))
@@ -57,7 +59,6 @@ while True:
 
         if choice == '5':
             print(num3, '!', '=', factorial(num3))
-
 
         next_calculation = input("Let's do next calculation? (yes/no): ")
         if next_calculation == "no":
