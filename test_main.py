@@ -11,6 +11,7 @@ class Test(TestCase):
     def test_multiply(self):
         self.fail()
 
+
     def test_divide(self):
         self.fail()
 
