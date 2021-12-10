@@ -56,8 +56,10 @@ while True:
 
     if choice in ('5'):
         num3 = int(input("Vloz  cislo: "))
+        if num3 < 0:
+            print("Nedefinovano, zdaej kladne cislo!")
 
-        if choice == '5':
+        elif choice == '5':
             print(num3, '!', '=', factorial(num3))
 
         next_calculation = input("Let's do next calculation? (yes/no): ")
