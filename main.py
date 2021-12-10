@@ -22,6 +22,8 @@ def divide(x, y):
     return x / y
 
 
+
+
 # Tady definujeme fuknci faktorial
 def factorial(x):
     return math.factorial(x)
