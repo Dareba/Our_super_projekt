@@ -22,17 +22,25 @@ def divide(x, y):
     return x / y
 
 
+
+
 # Tady definujeme fuknci faktorial
 def factorial(x):
     return math.factorial(x)
 
 
 print("Vyber si operaci:")
+
 print("1.Scitani")
+
 print("2.Odcitani")
+
 print("3.Nasobeni")
+
 print("4.Deleni")
+
 print("5.Faktorial")
+
 while True:
     # take input from the user
     choice = input("Enter choice(1/2/3/4/5): ")
@@ -45,24 +53,35 @@ while True:
         if choice == '1':
             print(num1, "+", num2, "=", add(num1, num2))
 
+
         elif choice == '2':
             print(num1, "-", num2, "=", subtract(num1, num2))
-
         elif choice == '3':
             print(num1, "*", num2, "=", multiply(num1, num2))
 
-        elif choice == '4':
-            print(num1, "/", num2, "=", divide(num1, num2))
+        if choice in ('4'):
+
+            if num2 == 0:
+                print("Nemuzes delit nulou, zkus to znovu! xd")
+            else:
+                print(num1, "/", num2, "=", divide(num1, num2))
 
     if choice in ('5'):
-        num3 = int(input("Vloz  cislo: "))
 
-        if choice == '5':
+        num3 = int(input("Vloz  cislo: "))
+        if num3 < 0:
+            print("Nedefinovano, musis zadat kladne cislo!")
+
+
+        else:
+
             print(num3, '!', '=', factorial(num3))
 
-        next_calculation = input("Let's do next calculation? (yes/no): ")
-        if next_calculation == "no":
+        next_calculation = input("Chces pokracovat v kalkulaci?? (y/n): ")
+
+        if next_calculation == "n":
             break
+
 
     else:
         print("Invalid Input")
