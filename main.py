@@ -22,8 +22,6 @@ def divide(x, y):
     return x / y
 
 
-
-
 # Tady definujeme fuknci faktorial
 def factorial(x):
     return math.factorial(x)
@@ -38,7 +36,6 @@ print("2.Odcitani")
 print("3.Nasobeni")
 
 print("4.Deleni")
-
 
 print("5.Faktorial")
 
@@ -60,23 +57,25 @@ while True:
         elif choice == '3':
             print(num1, "*", num2, "=", multiply(num1, num2))
 
-        elif choice == '4':
-            print(num1, "/", num2, "=", divide(num1, num2))
+        if choice in ('4'):
 
-    if choice in ('5'):)
+            if num2 == 0:
+                print("Nemuzes delit nulou, zkus to znovu! xd")
+            else:
+                print(num1, "/", num2, "=", divide(num1, num2))
+
+    if choice in ('5'):
 
         num3 = int(input("Vloz  cislo: "))
         if num3 < 0:
-            print("Nedefinovano, zadej kladne cislo!")
+            print("Nedefinovano, musis zadat kladne cislo!")
 
 
-        elif choice == '5':
-
+        else:
 
             print(num3, '!', '=', factorial(num3))
 
         next_calculation = input("Chces pokracovat v kalkulaci?? (y/n): ")
-
 
         if next_calculation == "n":
             break
