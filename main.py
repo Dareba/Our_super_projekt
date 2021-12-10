@@ -63,10 +63,11 @@ while True:
         elif choice == '4':
             print(num1, "/", num2, "=", divide(num1, num2))
 
-    if choice in ('5'):
+    if choice in ('5'):)
+
         num3 = int(input("Vloz  cislo: "))
         if num3 < 0:
-            print("Nedefinovano, zdaej kladne cislo!")
+            print("Nedefinovano, zadej kladne cislo!")
 
 
         elif choice == '5':
@@ -74,10 +75,10 @@ while True:
 
             print(num3, '!', '=', factorial(num3))
 
-        next_calculation = input("Let's do next calculation? (yes/no): ")
+        next_calculation = input("Chces pokracovat v kalkulaci?? (y/n): ")
 
 
-        if next_calculation == "no":
+        if next_calculation == "n":
             break
 
 
