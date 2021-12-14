@@ -31,6 +31,8 @@ def factorial(x):
 
 print("Vyber si matematickou operaci:")
 
+print("Upraveny kod")
+
 print("1.Scitani")
 
 print("2.Odcitani")
