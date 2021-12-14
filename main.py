@@ -29,7 +29,7 @@ def factorial(x):
     return math.factorial(x)
 
 
-print("Vyber si operaci:")
+print("Vyber si matematickou operaci:")
 
 print("1.Scitani")
 
