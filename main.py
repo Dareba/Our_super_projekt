@@ -22,16 +22,12 @@ def divide(x, y):
     return x / y
 
 
-
-
 # Tady definujeme fuknci faktorial
 def factorial(x):
     return math.factorial(x)
 
 
 print("Vyber si matematickou operaci:")
-
-print("Upraveny kod")
 
 print("1.Scitani")
 
