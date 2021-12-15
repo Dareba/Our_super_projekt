@@ -12,7 +12,7 @@ class Test(TestCase):
         self.assertEqual(multiply(2, 5), 10)
 
     def test_divide(self):
-        self.assertEqual(divide(10, 2), 5)
+        self.assertEqual(divide(20, 2), 10)
 
     def test_factorial(self):
         self.test_factorial(factorial(3), 6)
