@@ -3,24 +3,17 @@ from main import *
 
 class Test(TestCase):
     def test_add(self):
-        self.fail()
+        self.assertEqual(add(2, 2), 4)
 
     def test_subtract(self):
-        self.fail()
+        self.assertEqual(subtract(2, 2), 0)
 
     def test_multiply(self):
-        self.fail()
+        self.assertEqual(multiply(2, 5), 10)
 
     def test_divide(self):
-        self.fail()
+        self.assertEqual(divide(10, 2), 5)
 
     def test_factorial(self):
-        self.fail()
+        self.test_factorial(factorial(3), 6)
 
-#Vzor testu
-#class MyTestCase(unittest.TestCase):
-    #def test_something(self):
-        #self.assertEqual(True, False)  # add assertion here
-
-#if __name__ == '__main__':
-    #unittest.main()
