@@ -13,6 +13,7 @@ class Test(TestCase):
 
     def test_divide(self):
         self.assertEqual(divide(20, 2), 10)
+        self.raise
 
     def test_factorial(self):
         self.test_factorial(factorial(3), 6)

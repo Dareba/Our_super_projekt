@@ -84,12 +84,9 @@ while True:
     else:
         print("Invalid Input")
 
-
         if __name__ == '__main__':
-            divide(2, 2)
-            add(2, 2)
-            multiply(2, 5)
-            divide(10, 2)
-            factorial(3)
-
-
+            divide()
+            add()
+            multiply()
+            divide()
+            factorial()
