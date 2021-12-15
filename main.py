@@ -83,3 +83,13 @@ while True:
 
     else:
         print("Invalid Input")
+
+
+        if __name__ == '__main__':
+            divide((2, 2), 4)
+            add((2, 2), 0)
+            multiply((2, 5), 10)
+            divide((10, 2), 5)
+            factorial(3, 6)
+
+
