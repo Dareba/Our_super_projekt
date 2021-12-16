@@ -25,7 +25,6 @@ def divide(x, y):
         raise Exception("Nemuzes delit nulou.")
 
 
-
 # Tady definujeme fuknci faktorial
 def factorial(x):
     return math.factorial(x)
