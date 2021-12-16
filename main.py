@@ -5,7 +5,6 @@ Program provede matematickou operaci na zaklace volby uzivatele a provede ji s c
 """
 import math
 
-
 # Tady definujeme scitani
 def add(x, y):
     """
@@ -16,7 +15,6 @@ def add(x, y):
     """
     return x + y
 
-
 # Tady definujeme odcitani
 def subtract(x, y):
     """
@@ -26,7 +24,6 @@ def subtract(x, y):
     @return: Provede se rozdil zadanych cisel.
     """
     return x - y
-
 
 def multiply(x, y):
     """
