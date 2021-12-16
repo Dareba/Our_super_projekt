@@ -19,7 +19,10 @@ def multiply(x, y):
 
 # Tady definujeme deleni
 def divide(x, y):
-    return x / y
+    if y != 0:
+        return x / y
+    else:
+        raise Exception("Nemuzes delit nulou.")
 
 
 # Tady definujeme fuknci faktorial
@@ -27,7 +30,7 @@ def factorial(x):
     return math.factorial(x)
 
 
-print("Vyber si matematickou operaci:")
+print("Vyber si operaci:")
 
 print("1.Scitani")
 
