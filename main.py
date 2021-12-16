@@ -1,24 +1,52 @@
-# Vítejte v programu: Lehka kalkulacka
+"""
+Vitejte v programu Jednoducha kalkulacka.
+Uzivatel ma na vyber z peti matematickych operaci.
+Program provede matematickou operaci na zaklace volby uzivatele a provede ji s cisly zadanymi uzivatelem.
+"""
 import math
 
 
 # Tady definujeme scitani
 def add(x, y):
+    """
+    Tato funkce definuje scitani dvou cisel zadanych uzivatelem.
+    @param x: Prvni cislo, ktere uzivatel do programu zada.
+    @param y: Druhe cislo, ktere uzivatel do programu zada.
+    @return: Provede se soucet zadanych cisel.
+    """
     return x + y
 
 
 # Tady definujeme odcitani
 def subtract(x, y):
+    """
+    Tato funkce definuje odcitani dvou cisel zadanych uzivatelem.
+    @param x: Prvni cislo, ktere uzivatel do programu zada.
+    @param y: Druhe cislo, ktere uzivatel do programu zada.
+    @return: Provede se rozdil zadanych cisel.
+    """
     return x - y
 
 
-# Tady definujeme nasobeni
 def multiply(x, y):
+    """
+    Tato funkce definuje nasobeni dvou cisel zadanych uzivatelem.
+    @param x: Prvni cislo, ktere uzivatel do programu zada.
+    @param y: Druhe cislo, ktere uzivatel do programu zada.
+    @return: Provede se nasobeni zadanych cisel.
+    """
     return x * y
 
 
 # Tady definujeme deleni
 def divide(x, y):
+    """
+    Tato funkce definuje deleni dvou cisel zadanych uzivatelem.
+    @param x: Prvni cislo, ktere uzivatel do programu zada.
+    @param y: Druhe cislo, ktere uzivatel do programu zada.
+    @return: Provede se podil zadanych cisel.
+    """
+
     if y != 0:
         return x / y
     else:
@@ -27,10 +55,15 @@ def divide(x, y):
 
 # Tady definujeme fuknci faktorial
 def factorial(x):
+    """
+    Tato funkce definuje vypocet faktorialu z cisla zadaneho uzivatelem.
+    @param x: Cislo, ktere uzivatel co programu zada.
+    @return: Provede se vypocet faktorialu zadaneho cisla.
+    """
     return math.factorial(x)
 
 
-print("Vyber si operaci:")
+print("Vyber si matematickou operaci:")
 
 print("1.Scitani")
 
