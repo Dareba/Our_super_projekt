@@ -6,7 +6,6 @@ Program provede matematickou operaci na zaklace volby uzivatele a provede ji s c
 import math
 
 
-# Tady definujeme scitani
 def add(x, y):
     """
     Tato funkce definuje scitani dvou cisel zadanych uzivatelem.
@@ -17,7 +16,6 @@ def add(x, y):
     return x + y
 
 
-# Tady definujeme odcitani
 def subtract(x, y):
     """
     Tato funkce definuje odcitani dvou cisel zadanych uzivatelem.
@@ -28,7 +26,6 @@ def subtract(x, y):
     return x - y
 
 
-# Tady definujeme nasobeni
 def multiply(x, y):
     """
     Tato funkce definuje nasobeni dvou cisel zadanych uzivatelem.
@@ -39,7 +36,6 @@ def multiply(x, y):
     return x * y
 
 
-# Tady definujeme deleni
 def divide(x, y):
     """
     Tato funkce definuje deleni dvou cisel zadanych uzivatelem.
@@ -54,7 +50,6 @@ def divide(x, y):
         raise Exception("Nemuzes delit nulou.")
 
 
-# Tady definujeme fuknci faktorial
 def factorial(x):
     """
     Tato funkce definuje vypocet faktorialu z cisla zadaneho uzivatelem.
