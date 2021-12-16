@@ -2,6 +2,7 @@ from unittest import TestCase
 from main import *
 
 
+
 class Test(TestCase):
     def test_add(self):
         self.assertEqual(add(2, 2), 4)
@@ -18,5 +19,6 @@ class Test(TestCase):
 
     def test_factorial(self):
         self.assertEqual(factorial(3), 6)
+
 
 
