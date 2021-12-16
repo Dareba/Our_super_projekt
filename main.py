@@ -110,4 +110,4 @@ while True:
 
 
     else:
-        print("Invalid Input")
+        print("Invalid Input, blabla")
