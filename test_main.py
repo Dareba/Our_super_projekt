@@ -16,7 +16,6 @@ class Test(TestCase):
         self.assertEqual(divide(20, 5), 4)
         self.assertRaises(Exception, divide, 0)
 
-
     def test_factorial(self):
         self.assertEqual(factorial(3), 6)
 

@@ -6,7 +6,6 @@ import math
 def add(x, y):
     return x + y
 
-
 # Tady definujeme odcitani
 def subtract(x, y):
     return x - y
