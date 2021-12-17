@@ -62,28 +62,28 @@ def factorial(x):
     @return: Provede se vypocet faktorialu zadaneho cisla.
     """
     return math.factorial(x)
+if __name__ == '__main__':
 
+    print("Vyber si operaci:")
 
-print("Vyber si operaci:")
+    print("1.Scitani")
 
-print("1.Scitani")
+    print("2.Odcitani")
 
-print("2.Odcitani")
+    print("3.Nasobeni")
 
-print("3.Nasobeni")
+    print("4.Deleni")
 
-print("4.Deleni")
+    print("5.Faktorial")
 
-print("5.Faktorial")
-
-while True:
+    while True:
     # take input from the user
-    choice = input("Enter choice(1/2/3/4/5): ")
+        choice = input("Enter choice(1/2/3/4/5): ")
 
     # check if choice is one of the four options
-    if choice in ('1', '2', '3', '4'):
-        num1 = float(input("Vloz prvni cislo: "))
-        num2 = float(input("Vloz druhe cislo: "))
+        if choice in ('1', '2', '3', '4'):
+            num1 = float(input("Vloz prvni cislo: "))
+            num2 = float(input("Vloz druhe cislo: "))
 
         if choice == '1':
             print(num1, "+", num2, "=", add(num1, num2))
@@ -101,11 +101,11 @@ while True:
             else:
                 print(num1, "/", num2, "=", divide(num1, num2))
 
-    if choice in ('5'):
+        if choice in ('5'):
 
-        num3 = int(input("Vloz  cislo: "))
-        if num3 < 0:
-            print("Nedefinovano, musis zadat kladne cislo!")
+            num3 = int(input("Vloz  cislo: "))
+            if num3 < 0:
+                print("Nedefinovano, musis zadat kladne cislo!")
 
 
         else:
@@ -118,5 +118,5 @@ while True:
             break
 
 
-    else:
-        print("Invalid Input")
+        else:
+            print("Invalid Input")
