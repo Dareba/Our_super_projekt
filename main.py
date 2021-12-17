@@ -1,8 +1,11 @@
-# Vítejte v programu: Lehka kalkulacka
+"""
+Vitejte v programu Jednoducha kalkulacka.
+Uzivatel ma na vyber z peti matematickych operaci.
+Program provede matematickou operaci na zaklace volby uzivatele a provede ji s cisly zadanymi uzivatelem.
+"""
 import math
 
 
-# Tady definujeme scitani
 def add(x, y):
     """
     Tato funkce definuje scitani dvou cisel zadanych uzivatelem.
@@ -13,7 +16,6 @@ def add(x, y):
     return x + y
 
 
-# Tady definujeme odcitani
 def subtract(x, y):
     """
     Tato funkce definuje odcitani dvou cisel zadanych uzivatelem.
@@ -24,7 +26,6 @@ def subtract(x, y):
     return x - y
 
 
-# Tady definujeme nasobeni
 def multiply(x, y):
     """
     Tato funkce definuje nasobeni dvou cisel zadanych uzivatelem.
@@ -35,7 +36,6 @@ def multiply(x, y):
     return x * y
 
 
-# Tady definujeme deleni
 def divide(x, y):
     """
     Tato funkce definuje deleni dvou cisel zadanych uzivatelem.
@@ -50,7 +50,6 @@ def divide(x, y):
         raise Exception("Nemuzes delit nulou.")
 
 
-# Tady definujeme fuknci faktorial
 def factorial(x):
     """
     Tato funkce definuje vypocet faktorialu z cisla zadaneho uzivatelem.
@@ -58,10 +57,8 @@ def factorial(x):
     @return: Provede se vypocet faktorialu zadaneho cisla.
     """
     return math.factorial(x)
-
-
-print("Vyber si matematickou operaci:")
 if __name__ == '__main__':
+
     print("Vyber si operaci:")
 
     print("1.Scitani")
@@ -83,21 +80,21 @@ if __name__ == '__main__':
             num1 = float(input("Vloz prvni cislo: "))
             num2 = float(input("Vloz druhe cislo: "))
 
-            if choice == '1':
-                print(num1, "+", num2, "=", add(num1, num2))
+        if choice == '1':
+            print(num1, "+", num2, "=", add(num1, num2))
 
 
-            elif choice == '2':
-                print(num1, "-", num2, "=", subtract(num1, num2))
-            elif choice == '3':
-                print(num1, "*", num2, "=", multiply(num1, num2))
+        elif choice == '2':
+            print(num1, "-", num2, "=", subtract(num1, num2))
+        elif choice == '3':
+            print(num1, "*", num2, "=", multiply(num1, num2))
 
-            if choice in ('4'):
+        if choice in ('4'):
 
-                if num2 == 0:
-                    print("Nemuzes delit nulou, zkus to znovu! xd")
-                else:
-                    print(num1, "/", num2, "=", divide(num1, num2))
+            if num2 == 0:
+                print("Nemuzes delit nulou, zkus to znovu! xd")
+            else:
+                print(num1, "/", num2, "=", divide(num1, num2))
 
         if choice in ('5'):
 
@@ -106,14 +103,14 @@ if __name__ == '__main__':
                 print("Nedefinovano, musis zadat kladne cislo!")
 
 
-            else:
+        else:
 
-                print(num3, '!', '=', factorial(num3))
+            print(num3, '!', '=', factorial(num3))
 
-            next_calculation = input("Chces pokracovat v kalkulaci?? (y/n): ")
+        next_calculation = input("Chces pokracovat v kalkulaci?? (y/n): ")
 
-            if next_calculation == "n":
-                break
+        if next_calculation == "n":
+            break
 
 
         else:
