@@ -59,7 +59,7 @@ def factorial(x):
     return math.factorial(x)
 if __name__ == '__main__':
 
-    print("Vyber si operaci:")
+    print("Vyber si matematickou operaci:")
 
     print("1.Scitani")
 
