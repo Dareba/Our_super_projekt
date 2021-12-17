@@ -59,7 +59,7 @@ def factorial(x):
     return math.factorial(x)
 if __name__ == '__main__':
 
-    print("Vyber si operaci:")
+    print("Vyber si matematickou operaci:")
 
     print("1.Scitani")
 
@@ -82,8 +82,6 @@ if __name__ == '__main__':
 
         if choice == '1':
             print(num1, "+", num2, "=", add(num1, num2))
-
-
         elif choice == '2':
             print(num1, "-", num2, "=", subtract(num1, num2))
         elif choice == '3':
