@@ -103,9 +103,9 @@ if __name__ == '__main__':
                 print("Nedefinovano, musis zadat kladne cislo!")
 
 
-        else:
+            else:
 
-            print(num3, '!', '=', factorial(num3))
+                print(num3, '!', '=', factorial(num3))
 
         next_calculation = input("Chces pokracovat v kalkulaci?? (y/n): ")
 
