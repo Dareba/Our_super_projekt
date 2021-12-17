@@ -57,6 +57,8 @@ def factorial(x):
     @return: Provede se vypocet faktorialu zadaneho cisla.
     """
     return math.factorial(x)
+
+
 if __name__ == '__main__':
 
     print("Vyber si matematickou operaci:")
@@ -72,10 +74,10 @@ if __name__ == '__main__':
     print("5.Faktorial")
 
     while True:
-    # take input from the user
+        # take input from the user
         choice = input("Enter choice(1/2/3/4/5): ")
 
-    # check if choice is one of the four options
+        # check if choice is one of the four options
         if choice in ('1', '2', '3', '4'):
             num1 = float(input("Vloz prvni cislo: "))
             num2 = float(input("Vloz druhe cislo: "))
