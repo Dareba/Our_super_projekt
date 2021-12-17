@@ -47,7 +47,7 @@ def divide(x, y):
     if y != 0:
         return x / y
     else:
-        raise Exception("Nemuzes delit nulou.")
+        raise Exception("nemuzes delit nulou.")
 
 
 def factorial(x):
@@ -61,7 +61,7 @@ def factorial(x):
 
 if __name__ == '__main__':
 
-    print("Vyber si matematickou operaci:")
+    print("vyber si matematickou operaci:")
 
     print("1.Scitani")
 
